@@ -1,0 +1,43 @@
+.menu {
+	padding: 30px;
+}
+
+.logo img {
+	float: left;
+	width: 350px;
+	height: 50px;
+	margin-top: 30px;
+	/* background-color: yellow;
+	border: solid black; */
+}
+
+.menu-list {
+	padding-top: 180px;
+}
+
+.list-items {
+	list-style-type: none;
+	padding: 10px;
+	color: white;
+	/* background-color: cornflowerblue; */
+}
+
+.list-items a {
+	text-decoration: none;
+	color: white;
+}
+
+.top-names {
+	font-family: 'Homenaje', sans-serif;
+	-webkit-text-stroke: 0.5px gray;
+	font-size: 60px;
+	font-style: italic;
+}
+
+.bottom-names {
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	font-style: normal;
+	font-weight: bold;
+	padding: 2px;
+}
