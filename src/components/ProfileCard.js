@@ -2,7 +2,7 @@ import React from 'react';
 import icon from './images/ow-icon.png';
 import './CSS/profile.css';
 
-const Profile = () => {
+const ProfileCard = () => {
 	return (
 		<div className="profile-card">
 			<div className="icon">
@@ -13,4 +13,4 @@ const Profile = () => {
 	);
 };
 
-export default Profile;
+export default ProfileCard;

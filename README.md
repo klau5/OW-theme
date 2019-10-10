@@ -1,4 +1,4 @@
-## OW-theme made with React
+## OW-theme made with `react` and `react-router`
 
 In the project directory, you can run:
 
@@ -6,7 +6,3 @@ In the project directory, you can run:
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).

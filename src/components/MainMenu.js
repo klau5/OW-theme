@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Profile from './ProfileCard';
+
 import './CSS/menu.css';
 import logo from './images/ow-logo.png';
 
-class Menu extends Component {
+class MainMenu extends Component {
 	render() {
 		return (
 			<div className="menu">
@@ -12,11 +12,11 @@ class Menu extends Component {
 					<div className="logo">
 						<img src={logo} alt="logo" />
 					</div>
-					<Profile />
 				</div>
 				{/* header end */}
 
 				{/* menu list start */}
+
 				<div className="menu-list">
 					<ul className="list-items">
 						<li className="top-names">PLAY</li>
@@ -39,4 +39,4 @@ class Menu extends Component {
 	}
 }
 
-export default Menu;
+export default MainMenu;
