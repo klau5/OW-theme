@@ -23,7 +23,9 @@ class Menu extends Component {
 						<li className="top-names">TRAINING</li>
 						<li className="top-names">HERO GALLERY</li>
 						<li className="top-names">LOOT BOX</li>
-						<li className="bottom-names"><a href="https://overwatchleague.com/">OVERWATCH LEAGUE</a></li>
+						<li className="bottom-names">
+							<a href="https://overwatchleague.com/">OVERWATCH LEAGUE</a>
+						</li>
 						<li className="bottom-names">HIGHLIGHTS</li>
 						<li className="bottom-names">SOCIAL</li>
 						<li className="bottom-names">CAREER PROFILE</li>
