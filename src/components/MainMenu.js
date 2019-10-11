@@ -1,40 +1,60 @@
-import React, { Component } from 'react';
-import Profile from './ProfileCard';
-import './CSS/menu.css';
-import logo from './images/ow-logo.png';
+import React from "react";
+import { Link } from "react-router-dom";
 
-class Menu extends Component {
-	render() {
-		return (
-			<div className="menu">
-				{/* header start */}
-				<div className="menu-header">
-					<div className="logo">
-						<img src={logo} alt="logo" />
-					</div>
-					<Profile />
-				</div>
-				{/* header end */}
+import "./CSS/menu.css";
+import logo from "./images/ow-logo.png";
 
-				{/* menu list start */}
-				<div className="menu-list">
-					<ul className="list-items">
-						<li className="top-names">PLAY</li>
-						<li className="top-names">TRAINING</li>
-						<li className="top-names">HERO GALLERY</li>
-						<li className="top-names">LOOT BOX</li>
-						<li className="bottom-names"><a href="https://overwatchleague.com/">OVERWATCH LEAGUE</a></li>
-						<li className="bottom-names">HIGHLIGHTS</li>
-						<li className="bottom-names">SOCIAL</li>
-						<li className="bottom-names">CAREER PROFILE</li>
-						<li className="bottom-names">OPTIONS</li>
-						<li className="bottom-names">EXIT GAME</li>
-					</ul>
-				</div>
-				{/* menu list end */}
-			</div>
-		);
-	}
-}
+const MainMenu = () => {
+  return (
+    <div className="menu">
+      {/* header start */}
+      <div className="menu-header">
+        <div className="logo">
+          <img src={logo} alt="logo" />
+        </div>
+      </div>
+      {/* header end */}
 
-export default Menu;
+      {/* menu list start */}
+      <div className="menu-list">
+        <nav>
+          <ul className="list-items">
+            <li className="top-names">
+              <Link to="/play">PLAY</Link>
+            </li>
+            <li className="top-names">
+              <Link to="/training">TRAINING</Link>
+            </li>
+            <li className="top-names">
+              <Link to="/gallery">HERO GALLERY</Link>
+            </li>
+            <li className="top-names">
+              <Link to="/lootbox">LOOT BOX</Link>
+            </li>
+            <li className="bottom-names">
+              <Link to="">OVERWATCH LEAGUE</Link> {/* add OWL href */}
+            </li>
+            <li className="bottom-names">
+              <Link to="/highlights">HIGHLIGHTS</Link>
+            </li>
+            <li className="bottom-names">
+              <Link to="/social">SOCIAL</Link>
+            </li>
+            <li className="bottom-names">
+              <Link to="/career">CAREER PROFILE</Link>
+            </li>
+            <li className="bottom-names">
+              <Link to="/options">OPTIONS</Link>
+            </li>
+            <li className="bottom-names">
+              <Link to="/exit">EXIT GAME</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      {/* menu list end */}
+    </div>
+  );
+};
+
+export default MainMenu;
