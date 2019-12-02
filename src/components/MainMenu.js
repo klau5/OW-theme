@@ -24,7 +24,7 @@ const MainMenu = () => {
             </li>
             <li className="top-names">
               <Link to="/training">TRAINING</Link>
-            </li>
+          </li>
             <li className="top-names">
               <Link to="/gallery">HERO GALLERY</Link>
             </li>
